@@ -9,5 +9,6 @@ if (['patch', 'minor', 'major'].indexOf(releaseType) < 0) {
 }
 
 execSync(`npm version ${releaseType}`, execSyncOptions)
+execSync(`git tag ${require('./package.json').version.trim()}`, execSyncOptions)
 execSync('git push origin master', execSyncOptions)
 execSync('npm publish', execSyncOptions)
