@@ -1,6 +1,6 @@
 {
   "name": "packrel",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Easy, cross-os npm and git semver-based version release from the commandline",
   "main": "index.js",
   "bin": {
