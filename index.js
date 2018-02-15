@@ -8,6 +8,10 @@ if (['patch', 'minor', 'major'].indexOf(releaseType) < 0) {
   process.exit(1);
 }
 
-execSync(`npm version ${releaseType}`, execSyncOptions)
-execSync('git push origin master --tags', execSyncOptions)
-execSync('npm publish', execSyncOptions)
+[
+  `npm version ${releaseType}`,
+  'git push origin master --tags',
+  'npm publish' 
+].forEach((cmd) => {
+  console.log(execSync(cmd, execSyncOptions));
+});
