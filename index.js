@@ -8,6 +8,10 @@ if (['patch', 'minor', 'major'].indexOf(releaseType) < 0) {
   process.exit(1);
 }
 
+const versionTag = execSync(`npm version ${releaseType}`, execSyncOptions).trim(); 
+console.log(versionTag);
+process.exit()
+
 [
   `npm version ${releaseType}`,
   'git push origin master --tags',
