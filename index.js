@@ -15,4 +15,4 @@ if (['patch', 'minor', 'major'].indexOf(releaseType) < 0) {
 
 const versionTag = executeAndLogCommandOutput(`npm version ${releaseType}`, execSyncOptions).trim();
 
-[`git commit -m "${versionTag}"`, `git push origin master`, `git push origin ${versionTag}`, 'npm publish' ].forEach(executeAndLogCommandOutput);
+[`git add .`, `git commit -m "${versionTag}"`, `git push origin master`, `git push origin ${versionTag}`, 'npm publish' ].forEach(executeAndLogCommandOutput);
