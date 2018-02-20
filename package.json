@@ -1,22 +1,30 @@
 {
-  "name": "packrel",
-  "version": "1.0.13",
-  "description": "Easy, cross-os npm and git semver-based version release from the commandline",
-  "main": "index.js",
-  "bin": {
-    "packrel": "index.js"
-  },
-  "scripts": {
-    "test": "echo 1"
-  },
-  "keywords": [
-    "npm",
-    "git",
-    "release",
-    "cross-os",
-    "commandline",
-    "cli"
-  ],
-  "author": "Michel Moreau",
-  "license": "MIT"
+    "name": "packrel",
+    "version": "1.0.15",
+    "description": "Easy, cross-os npm and git semver-based version release from the commandline",
+    "main": "index.js",
+    "bin": {
+        "packrel": "index.js"
+    },
+    "scripts": {
+        "test": "echo 1"
+    },
+    "keywords": [
+        "npm",
+        "git",
+        "release",
+        "cross-os",
+        "commandline",
+        "cli"
+    ],
+    "author": "Michel Moreau",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MichelML/packrel.git"
+    },
+    "bugs": {
+        "url": "https://github.com/MichelML/packrel/issues",
+        "email": "project@hostname.com"
+    }
 }
