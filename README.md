@@ -1,7 +1,8 @@
 # Packrel  
 > Easy, cross-OS commandline utility for npm and git semver-based version release   
   
-[![npm](https://img.shields.io/npm/dt/packrel.svg)](https://www.npmjs.com/package/packrel) [![npm](https://img.shields.io/npm/v/packrel.svg)](https://www.npmjs.com/package/packrel)
+[![npm](https://img.shields.io/npm/dt/packrel.svg)](https://www.npmjs.com/package/packrel)  
+[![npm](https://img.shields.io/npm/v/packrel.svg)](https://www.npmjs.com/package/packrel)
   
 ## Install  
   
